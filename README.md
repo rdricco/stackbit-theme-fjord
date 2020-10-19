@@ -4,7 +4,7 @@ A minimal blogging theme for Stackbit. [Live Demo](https://themes.stackbit.com/d
 
 Click the button below to use this theme in Gatsby, Hugo or Jekyll via the Stackbit site builder:
 
-[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/stackbithq/stackbit-theme-fjord)
+[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/rdricco/stackbit-theme-fjord)
 
 ### About Stackbit
 
