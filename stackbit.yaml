@@ -157,7 +157,7 @@ models:
         name: title
         label: Título do Header
         description: >-
-          The title displayed on the left side if no logo image added. If value is not set, the author name will be used.
+          O título exibido do lado esquerdo quando não houver imagem de logo. Se não houver valor definido, o nome do autor será usado.
       - type: string
         name: tagline
         label: Header - Tagline
@@ -284,7 +284,7 @@ models:
         required: true
   page:
     type: page
-    label: Page
+    label: Página
     layout: page
     exclude: posts/**
     fields:
@@ -296,17 +296,16 @@ models:
       - type: string
         name: subtitle
         label: Subtítulo
-        description: The text shown just below the page title.
+        description: O texto exibido abaixo do título da página.
       - type: string
         name: excerpt
         label: Resumo
-        description: The excerpt of the page displayed in meta data.
+        description: Um resumo do conteúdo que será exibido na metadata da página.
       - type: image
         name: img_path
         label: Imagem
         description: >-
-          The image shown on the left side. If no image added, the default image
-          specified in Header Configuration is displayed.
+          A imagem exibida como background no lado esquerdo na página do post. Se não houser imagem definida, será usada a imagem padrão especificada nas configurações do Header.
   post:
     type: page
     urlPath: "/posts/{slug}"
@@ -316,36 +315,34 @@ models:
     fields:
       - type: string
         name: title
-        label: Title
-        description: The title of the post.
+        label: Título
+        description: Título do post.
         required: true
       - type: string
         name: subtitle
-        label: Subtitle
-        description: The text shown just below the post title.
+        label: Subtítulo
+        description: O texto abaixo do título do post.
       - type: date
         name: date
-        label: Date
+        label: Data
         required: true
       - type: image
         name: thumb_img_path
-        label: Featured Image
-        description: The image shown in the blog feed.
+        label: Imagem de destaque
+        description: A image exibida no feed do blog.
       - type: image
         name: content_img_path
-        label: Alternative Featured Image
+        label: Imagem de destaque alternativa
         description: >-
-          The image shown on the left side in the single post. If no image
-          added, the default image specified in Header Configuration is
-          displayed.
+          A imagem exibida como background no lado esquerdo na página do post. Se não houser imagem definida, será usada a imagem padrão especificada nas configurações do Header.
       - type: string
         name: excerpt
-        label: Excerpt
-        description: The excerpt of the post displayed in the blog feed and meta data.
+        label: Resumo
+        description: O resumo do post que é exibido no feed do blog e na metadata da página.
       - type: boolean
         name: hide_header
-        label: Hide header
-        description: Hide the left side in the single post.
+        label: Ocultar o header
+        description: Ocultar o header nesse post.
         default: false
   action:
     type: object
@@ -371,15 +368,15 @@ models:
         required: true
       - type: string
         name: icon_class
-        label: Icon
+        label: Icone
         description: Font Awesome icon class name, used only when style is "icon".
       - type: boolean
         name: new_window
-        label: Open in new tab/window
+        label: Abrir em nova aba/janela
         default: false
   form_field:
     type: object
-    label: Form Field
+    label: Campo de Formulário
     labelField: name
     fields:
       - type: enum
@@ -393,24 +390,24 @@ models:
           - checkbox
           - textarea
           - select
-        description: Type of the form field.
+        description: Tipo de campo de formulário.
         required: true
       - type: string
         name: name
-        label: Name
-        description: The name of the field, submitted with the form.
+        label: Nome
+        description: O nome do campo, enviado com o formulário
         required: true
       - type: string
         name: label
         label: Label
-        description: The caption of the field, shown above the field input.
+        description: A leganda do campo, exibida acima da entrada.
       - type: string
         name: default_value
-        description: The default value for textual field types.
+        description: Valor padrão dos campos textuais.
       - type: list
         name: options
-        description: The list of options, used only when the field type is "select".
+        description: A lista de opções, usadas quando o campo é do tipo "select".
       - type: boolean
         name: is_required
-        label: Is the field required?
+        label: O campo é obrigatório?
         default: false
