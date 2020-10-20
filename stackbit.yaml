@@ -8,7 +8,7 @@ dataDir: data
 pagesDir: content
 pageLayoutKey: layout
 metadata:
-  title: Fjord
+  title: Fiorde
   description: A minimal blogging theme
   author: Stackbit
   authorURL: 'https://www.stackbit.com'
@@ -124,16 +124,16 @@ sourceMapping:
 models:
   config:
     type: config
-    label: Site Configuration
+    label: Configurações do Site
     fields:
       - type: string
         name: description
-        label: Site Description
-        description: The default site description used in meta data.
+        label: Descrição do Site
+        description: Descrição usada na metadata do site.
       - type: enum
         name: palette
-        label: Color Palette
-        description: The color palette of the theme.
+        label: Paleta de Cores
+        description: A paleta de cores usada pelo tema.
         options:
           - yellow
           - blue
@@ -142,71 +142,71 @@ models:
         default: yellow
       - type: model
         name: header
-        label: Header Configuration
+        label: Configuração do Header 
         models: [header]
       - type: model
         name: footer
-        label: Footer Configuration
+        label: Configuração do Footer
         models: [footer]
   header:
     type: object
-    label: Header Configuration
+    label: Configuração do Header
     labelField: title
     fields:
       - type: string
         name: title
-        label: Header Title
+        label: Título do Header
         description: >-
           The title displayed on the left side if no logo image added. If value is not set, the author name will be used.
       - type: string
         name: tagline
-        label: Header Tagline
-        description: The tagline displayed on the left side.
+        label: Header - Tagline
+        description: A tagline exibida do lado esquerdo.
       - type: image
         name: logo_img
         label: Logo
-        description: The logo image displayed on the left side.
+        description: A imagem de logo exibida do lado esquerdo.
       - type: image
         name: background_img
-        label: Background Image
-        description: The background image displayed on the left side.
+        label: Imagem de Background
+        description: A imagem de background exibida do lado esquerdo.
       - type: boolean
         name: has_nav
-        label: Enable Navigation Menu
-        description: Display the navigation menu bar on the left side.
+        label: Ativar Menu de Navegação
+        description: Exibir o menu de navegação do lado esquerdo.
         default: true
       - type: list
         name: nav_links
-        label: Navigation Links
-        description: List of navigation links.
+        label: Links de Navegação
+        description: Lista de links para navegação.
         items:
           type: model
           models: [action]
       - type: boolean
         name: has_social
-        label: Enable Social Links
-        description: Display social links on the left side.
+        label: Ativar Links Sociais
+        description: Exibir links sociais no lado esquerdo.
         default: true
       - type: list
         name: social_links
-        label: Social Links
-        description: List of social links on the left side.
+        label: links Sociais
+        description: Lista dos linkssociais do lado esquerdo.
         items:
           type: model
           models: [action]
   footer:
     type: object
-    label: Footer Configuration
+    label: Configuração do Footer
     labelField: content
     fields:
       - type: string
         name: content
-        label: Footer Content
-        description: The copyright text displayed in the footer.
+        label: Conteudo do Footer
+        description: O texto de copyright exibido no footer.
       - type: list
         name: links
         label: Links
-        description: List of links in the footer.
+        description: Lista de links no footer.
         items:
           type: model
           models: [action]
@@ -221,25 +221,25 @@ models:
     fields:
       - type: string
         name: title
-        label: Title
-        description: The title of the page.
+        label: Título
+        description: O Título da página.
         required: true
       - type: string
         name: excerpt
-        label: Excerpt
-        description: The excerpt of the page displayed in meta data.
+        label: Resumo
+        description: Breve resumo que será exibido no metadata da página.
       - type: boolean
         name: has_more_link
-        label: Show keep keading link
-        description: Display the keep reading link in the post feed
+        label: Mostrar Continue Lendo
+        description: Exibir o botão continue lendo no feed de posts
         default: true
       - type: string
         name: more_link_text
-        label: Keep reading link label
+        label: Texto do Continue Lendo
   contact:
     type: page
     urlPath: "/contact"
-    label: Contact
+    label: Contato
     layout: contact
     file: contact.md
     singleInstance: true
@@ -247,7 +247,7 @@ models:
       - type: string
         name: title
         label: Title
-        description: The title of the page.
+        description: O Título da página.
         required: true
       - type: string
         name: subtitle
@@ -290,20 +290,20 @@ models:
     fields:
       - type: string
         name: title
-        label: Title
-        description: The title of the page.
+        label: Título
+        description: Titulo da página.
         required: true
       - type: string
         name: subtitle
-        label: Subtitle
+        label: Subtítulo
         description: The text shown just below the page title.
       - type: string
         name: excerpt
-        label: Excerpt
+        label: Resumo
         description: The excerpt of the page displayed in meta data.
       - type: image
         name: img_path
-        label: Image
+        label: Imagem
         description: >-
           The image shown on the left side. If no image added, the default image
           specified in Header Configuration is displayed.

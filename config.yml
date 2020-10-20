@@ -1,10 +1,10 @@
 baseurl: "/"
-title: "Stackbit Fjord Theme"
+title: "Stackbit - Fiorde"
 page_load_js: "assets/js/main.js"
 params:
-  description: A minimal blogging theme for Stackbit
+  description: Um tema para blogs, feito para o Stackbit
   header:
-    title: Fjord
+    title: Fiorde
     tagline: Minimal and clean blog theme
     logo_img: "images/logo.png"
     background_img: "images/header-bg.jpg"
@@ -13,13 +13,13 @@ params:
       - label: Home
         url: /
         style: link
-      - label: About
+      - label: Sobre
         url: /about
         style: link
       - label: Style Guide
         url: /style-guide
         style: link
-      - label: Contact
+      - label: Contato
         url: /contact
         style: link
     has_social: true
@@ -50,9 +50,9 @@ params:
         icon_class: fa-dev
         new_window: true
   footer:
-    content: "&copy; All rights reserved."
+    content: "&copy; Todos os Direitos Reservados."
     links:
-      - label: Made with Stackbit.
+      - label: Feito com Stackbit.
         url: https://www.stackbit.com
         style: link
         new_window: true
